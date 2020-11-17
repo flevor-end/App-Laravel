@@ -2,6 +2,8 @@
 
 ![Captura de portafolio](.readme-static/captura.png)
 
+demo: https://flevor-end.github.io/App-Laravel/
+
 Prueba laravel que utiliza la Laragon como servidor para mostrar la prueba con sus instrucciones. Algunas de las features que tiene son:
 
 -   laragon
