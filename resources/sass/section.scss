@@ -1,0 +1,40 @@
+.section {
+    text-align: center;
+    background: var(--body-bg);
+    padding: 3em 0;
+    .copy {
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+    &__item {
+        // border: 1px solid red;
+        margin: 1.5em;
+        .copy {
+            margin-bottom: 2em;
+        }
+        img {
+            margin: 1.5em;
+            border-radius: 50%;
+            border: solid 2px #3bc4fc;
+            width: 123px;
+            padding: 1em;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        &__grid {
+            display: grid;
+            grid-column-gap: 1em;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

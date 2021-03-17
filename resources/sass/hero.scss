@@ -1,0 +1,17 @@
+.hero,
+.bgCodensa {
+    text-align: center;
+    padding: 5em;
+    background: url("public/img/No-más-021.jpg") center no-repeat;
+    margin: 0 calc(-1 * var(--wrapperSpace));
+    background-size: cover;
+}
+
+.containerHero {
+    margin: auto;
+    position: relative;
+}
+
+.bgCodensa {
+    background: url("public/img/No-más-codensa.jpg") center no-repeat;
+}

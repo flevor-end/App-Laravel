@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Document</title>
+  <title>Mensaje Recibido</title>
 </head>
 <body>
-  <h1> esto funciono </h1>
+  <p>Recibiste un mensaje de: {{ $msg['name']}} - {{$msg['email']}} </p>
+  <p><strong>Localidad:</strong> {{$msg['subject']}} </p>
+  <p><strong>Caso:</strong> {{$msg['content']}} </p>
+
 </body>
 </html>

@@ -16,7 +16,11 @@ Route::resource('portfolio', 'projectController')->names('projects')->parameters
 
 // Route::delete('/portfolio/{project}', 'ProjectController@destroy')->name('projects.destroy');
 
-Route::view('/contact', 'contact')->name('contact');
+Route::view('/contactoCodensa', 'codensa')->name('codensa');
+Route::view('/contactoVanti', 'vanti')->name('vanti');
+Route::view('/contactoAgua', 'agua')->name('agua');
+
+
 
 Route::post('contact', 'MessageController@store')->name('messages.store');
 Auth::routes();
