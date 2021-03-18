@@ -6,7 +6,7 @@
 <div class="hero">
         <div class="container">
           <h1 class="display-4 text-white"
-          >#NoMasAbusos</h1>
+          >#NoMásAbusos</h1>
         </div>
       </div>
 <section class="section">
@@ -14,7 +14,7 @@
     <div class="col-12">
       <div class="container text-center">
       <p class="copy">En esta página podrá direccionar su queja a las entidades que 
-        le ayudarán a darle solución a su problemática <br>Por Favor Seleccione la entidad que le generó la problemática</p>
+        le ayudarán a darle solución a su problemática <br>Por favor seleccione la entidad que le generó la problemática</p>
       </div>
       <div class="section__grid">       
         <div class="section__item">
@@ -29,7 +29,7 @@
           <a class="btn btn-lg btn-block" 
           href="{{ route('vanti') }}">
           <img src="../img/vanti.png" alt="" />
-          <p>#RespondaVanti</p></a>
+          <p>#VantiResponda</p></a>
         </div>
         <div class="section__item">
           <a class="btn btn-lg btn-block" 
@@ -37,13 +37,11 @@
           <img src="../img/agua.png" alt="" />
           <p>#RespondaAcueducto</p></a>
         </div>
-        <!-- <a class="btn btn-lg btn-block" 
-        href="{{ route('projects.index') }}">casos</a> -->
+      <a class="btn btn-lg btn-block" 
+        href="{{ route('projects.index') }}">casos</a>
       </div>
   </div>
 </div>
   
-
-
 
 @endsection

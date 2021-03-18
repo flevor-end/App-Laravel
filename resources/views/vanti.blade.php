@@ -14,17 +14,19 @@
 
       @csrf
       <h1 class="display-5">@lang('Vanti')</h1>
-      <p>Ingrese Su caso aqui</p>
+      <p>Ingrese su caso aqui</p>
       <hr>
       <div class="form-group">
-        <label for="case">Cual es su caso?</label>
+        <label for="case">¿Cuál es su caso?</label>
         <select name="Cobros Excesivos" class="form-control bg-light shadow-sm">
+
+          <option value="">Cobros excesivos</option>
 
           <option>Cobros excesivos por cambio del medidor</option>
 
-          <option>Revisiones Periodicas</option>
+          <option>Revisiones Periódicas</option>
 
-          <option>Reconexion</option>
+          <option>Reconexión</option>
           <option value="">Servicios Tercerizados</option>
 
         </select>
@@ -45,22 +47,21 @@
         @enderror
       </div>
       
-      <div class="form-group">
-        <label for="email">Email</label>
+      <!-- <div class="form-group">
+        <label for="textarea">Cédula</label>
         <input class="form-control bg-light shadow-sm 
-          @error('email') is-invalid @else border-0 @enderror" 
-          id="email"
-          type="text" 
-          name="email" 
-          placeholder="Email ..." 
-          value="{{ old('email') }}"
+        @error('textarea') is-invalid @else border-0 @enderror" 
+        id="textarea'"
+        name="textarea'" 
+        placeholder="Cédula ..." 
+        value="{{ old('textarea')}}"
         >
-        @error('email')
+        @error('textarea')
           <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
           </span>
         @enderror
-      </div>
+      </div> -->
         
       <div class="form-group">
         <label for="subject">Localidad</label>
@@ -77,22 +78,60 @@
             </span>
         @enderror
       </div>
-      <div class="form-group">
-        <label for="Number">Numero de Contacto:</label>
+
+
+      <!-- <div class="form-group">
+        <label for="textarea">Barrio</label>
         <input class="form-control bg-light shadow-sm 
-        @error('Number') is-invalid @else border-0 @enderror" 
-        id="Number"
-        name="Number" 
-        placeholder="Numero ..." 
-        value="{{ old('Number') }}"
-        type="number"
+        @error('textarea') is-invalid @else border-0 @enderror" 
+        id="textarea"
+        name="textarea" 
+        placeholder="Barrio ..." 
+        value="{{ old('textarea') }}"
+        type="textarea"
         >
-        @error('subject')
+        @error('textarea')
+            <span class="invalid-feedback" role="alert">
+              <strong>{{ $message }}</strong>
+            </span>
+        @enderror
+      </div> -->
+
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input class="form-control bg-light shadow-sm 
+        @error('email') is-invalid @else border-0 @enderror" 
+        id="email"
+        name="email" 
+        placeholder="Correo ..." 
+        value="{{ old('email') }}"
+        type="email"
+        >
+        @error('email')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
             </span>
         @enderror
       </div>
+
+      <!-- <div class="form-group">
+        <label for="phone">Número de celular</label>
+        <input class="form-control bg-light shadow-sm 
+        @error('phone') is-invalid @else border-0 @enderror" 
+        id="phone"
+        name="phone" 
+        placeholder="Número ..." 
+        value="{{ old('phone') }}"
+        type="phone"
+        >
+        @error('phone')
+            <span class="invalid-feedback" role="alert">
+              <strong>{{ $message }}</strong>
+            </span>
+        @enderror
+      </div> -->
+
+
       <div class="form-group">
         <label for="file">Subir un archivo</label>
         <input class="form-control bg-light shadow-sm 
@@ -103,7 +142,7 @@
         value="{{ old('file') }}"
         type="file"
         >
-        @error('subject')
+        @error('file')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
             </span>
